@@ -1,0 +1,635 @@
+/*CSS Styles*/
+.page .content .inner {
+  padding: 0px 0px 0px;
+  height: 100%;
+}
+
+.title-top h3 {
+padding-top: 1%;
+}
+
+.box {
+border-top: 1px solid floralwhite;;
+float: left;
+padding: 1.5vw;
+overflow: auto;
+position: relative;
+background: floralwhite;
+cursor: pointer;
+}
+
+.box p {
+margin: 0;
+padding: 0;
+text-align: justify;
+font-size: 1em;
+font-size: 0.9vw;
+line-height: 1vw;
+display: block;
+position: relative;
+padding-bottom: 0.8vw;
+}
+
+.tumblrelement {
+    text-align: center; 
+    height: 6vw; 
+    max-width: 100%; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.tumblrelement p {
+    text-align: center;
+    color: #555;
+}
+
+.tumblrelement p {
+    text-align: center;
+    color: #555;
+}
+
+.tel  {
+    height: 18vw; 
+    max-width: 100%; 
+    background-size: auto; 
+    background-position: 50% 1.5vw; 
+    background-repeat: no-repeat; 
+    margin-bottom: 1vw;
+}
+
+.grunzeug {
+    text-align: center; 
+    height: 15vw; 
+    max-width: 100%; 
+    background-size: contain; 
+    background-position: 50% 0vw; 
+    background-repeat: no-repeat;
+    margin-bottom: 1vw;
+}
+
+.grunzeugtext p {
+    color: #555;
+}
+
+.grunzeugtext p:first-child {
+    text-align: center;
+    color: #555;
+}
+
+.blog {
+    text-align: center; 
+    height: 10vw; 
+    max-width: 100%; 
+    background-size: contain; 
+    background-position: 50% 0vw; 
+    background-repeat: no-repeat;
+    margin-bottom: 1vw;
+}
+
+.blogtext p {
+    color: #555;
+}
+
+.blogtext p:first-child {
+    text-align: center;
+    color: #555;
+}
+
+.box h3 {
+padding: 0px 0px;
+margin: 0px;
+font-size: 1.7vw;
+text-align: center;
+}
+
+.box h4{
+    padding: 10px 0 0 0;
+    margin: 0;
+	font-size: 1vw;
+	text-align: center;
+	font-weight: bold;
+}
+
+.box h5{
+    font-size:1vw; 
+    font-weight:bold; 
+    padding-bottom: 0px;
+    margin-bottom: 0.5vw;
+    margin-top: 2.15vw;
+}
+
+.box h6{
+    font-size:0.9vw; 
+    font-weight:bold; 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 2vw;
+}
+
+.box h7{
+    font-size:1vw; 
+    font-weight:bold; 
+    padding: 1vw 0 0 0;
+    position: absolute;
+}
+
+.box h8{
+    font-size:1.1vw; 
+    font-weight:bold; 
+    padding-bottom: 0px;
+    margin-bottom: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.box h9{
+    font-size:1vw; 
+    font-weight:bold; 
+    padding-bottom: 0px;
+    margin-bottom: 0.5vw;
+    margin-top: 23vw;
+    position: absolute;
+}
+
+.box.box-expanded h4 {
+font-size: 50px;
+line-height: 50px;
+padding-top: 0px;
+}
+
+.box.box-expanded ul {
+font-size: 20px;
+line-height: 30px;
+}
+
+.box ul li {
+text-align: justify;
+font-size: 0.9em;
+font-size: 0.9vw;
+line-height: 1.9vw;
+margin-top: 1em;
+margin-top: 1vw;
+position: relative;
+padding-bottom: 5px;
+list-style-type: circle;
+}
+
+.info {
+
+background-color: beige;
+border-radius: 20px;
+padding-bottom: 1vw;
+margin-left: -0.2vw;
+margin-right: -0.4vw;
+padding-left: 0.6vw;
+padding-right: 0.6vw;
+/* padding-bottom: 30px; */
+}
+
+.info p {
+margin: 1vw 0 0 0;
+padding: 0;
+text-align: justify;
+font-size: 1em;
+font-size: 0.7vw;
+line-height: 1.9vw;
+display: block;
+position: relative;
+/* padding-bottom: 30px; */
+}
+
+.page > div {
+display: block;
+height: 100%;
+width: 100%;
+position: absolute;
+background: rgba(255, 255, 255, 0);
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+}
+
+.f-title {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 8vw;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.f-title a {
+  width:8vw;
+  text-align: center;
+  height: 6vw;
+  font-size: 1vw;
+  line-height: 3vw;
+  color: #777;
+  background:#ffc;
+  font-family:"Reenie Beanie",cursive !important;
+  font-size:1.5vw;
+  line-height: 6vw;
+  position: absolute;
+  -o-transform:rotate(270deg);
+  -webkit-transform:rotate(270deg);
+  -moz-transform:rotate(270deg);
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+
+.f-title > .one {
+  -o-transform:rotate(272deg);
+  -webkit-transform:rotate(272deg);
+  -moz-transform:rotate(272deg);
+  background: #ffc;
+  top:2vw;  
+  left: 1%;
+  font-size: 1.5vw;
+}
+
+
+.f-title > .two {
+    -o-transform:rotate(276deg);
+    -webkit-transform:rotate(276deg);
+    -moz-transform:rotate(276deg);
+    top:2.4vw;
+    left:9%;
+    font-size: 1.5vw;
+    background:#ccf;
+}
+
+
+.f-title > .three {
+    -o-transform:rotate(263deg);
+    -webkit-transform:rotate(263deg);
+    -moz-transform:rotate(263deg);
+    top:2.9vw;
+    left:16%;
+    font-size: 1.3vw;
+    background:#f40;
+}
+
+.f-title > .four {
+    -o-transform:rotate(272deg);
+    -webkit-transform:rotate(272deg);
+    -moz-transform:rotate(272deg);
+    top:2vw;
+    left:22%;
+    font-size: 1.5vw;
+    background:#054;
+}
+
+.f-title > .five {
+    -o-transform:rotate(266deg);
+    -webkit-transform:rotate(266deg);
+    -moz-transform:rotate(266deg);
+    top:2.7vw;
+    left:28%;
+    font-size: 1.5vw;
+    background:#cfc;
+}
+
+.f-title > .six {
+    -o-transform:rotate(273deg);
+    -webkit-transform:rotate(273deg);
+    -moz-transform:rotate(273deg);
+    top:2vw;  
+    left:34.5%;
+    font-size: 1.3vw;
+    background:#f60;
+}
+
+.f-title > .seven {
+    -o-transform:rotate(267deg);
+    -webkit-transform:rotate(267deg);
+    -moz-transform:rotate(267deg);
+    top:2vw;  
+    right:34.5%;
+    font-size: 1.3vw;
+    background:#f60;
+}
+
+.f-title > .eight {
+    -o-transform:rotate(274deg);
+    -webkit-transform:rotate(274deg);
+    -moz-transform:rotate(274deg);
+    top:2.7vw;
+    right:28%;
+    font-size: 1.5vw;
+    background:#cfc;
+}
+
+.f-title > .nine {
+    -o-transform:rotate(268deg);
+    -webkit-transform:rotate(268deg);
+    -moz-transform:rotate(269deg);
+    top:2vw;
+    right: 22%;
+    font-size: 1.5vw;
+    background:#054;
+}
+
+
+.f-title > .ten {
+    -o-transform:rotate(277deg);
+    -webkit-transform:rotate(277deg);
+    -moz-transform:rotate(277deg);
+    top:2.9vw;
+    right: 16%;
+    font-size: 1.3vw;
+    background:#f40;
+}
+
+.f-title > .eleven {
+    -o-transform:rotate(264deg);
+    -webkit-transform:rotate(264deg);
+    -moz-transform:rotate(264deg);
+    top:2.4vw;
+    right: 9%;
+    font-size: 1.5vw;
+    background:#ccf;
+    
+}
+
+
+/*______________Pictures________________*/
+
+.img-juna {
+	background-image: url(../images/conceptpicturelowquality.jpg);
+	background-repeat: no-repeat;
+	background-size: 34vw;
+	background-position: 50% 12vw;
+}
+
+.create {
+    margin: 0px;
+    background-repeat: no-repeat;
+    display: block;
+}l
+
+
+
+/* -------------Screen Size-------------*/
+
+/*1200px*/
+@media screen and (max-width : 1200px)  {}
+
+/* 979px */
+@media screen and (max-width : 979px)  {
+  .f-title a:nth-child(5n) {
+    display:none;}
+  .f-title a:nth-child(6n) {
+    display:none;}
+ }
+
+/*767px*/
+/* portrait and landscape */
+@media screen and (max-width : 767px)  {
+  .f-title a:nth-child(4n) {
+    display:none;}
+  .f-title a:nth-child(5n) {
+    display:none;}
+  .f-title a:nth-child(6n) {
+    display:none;}
+ }
+
+/*Phone*/
+/* portrait and landscape */
+@media screen and (min-device-width : 320px) 
+and (max-device-width : 480px)  {}
+
+/*  landscape  */
+@media screen and (min-width : 321px)  {}
+
+/*  portrait */
+@media screen and (max-width : 320px)  {}
+
+/* iPhone 4 and high pixel devices  */
+@media screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)  {}
+
+/*Staying Menu Styling */
+.menu {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 8vw;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-padding {
+ padding: 0px 15px 0px;
+ top: 0px;
+ left: 0px;
+ height: 8vw;
+}
+.menu a {
+  width:8vw;
+  text-align: center;
+  height: 6vw;
+  font-size: 12px;
+  line-height: 50px;
+  color: #777;
+  background:#ffc;
+  font-family:"Reenie Beanie",cursive !important;
+  font-size:140%;
+  line-height: 80px;
+  position: absolute;
+  -o-transform:rotate(270deg);
+  -webkit-transform:rotate(270deg);
+  -moz-transform:rotate(270deg);
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+
+
+.menu > .one {
+  -o-transform:rotate(272deg);
+  -webkit-transform:rotate(272deg);
+  -moz-transform:rotate(272deg);
+  background-color: rgba(0,0,0,0);
+  z-index: 100001;
+  box-shadow: 0 0 0;
+  top:37px;  
+  left: 1%;
+  font-size: 1.5vw;
+}
+
+
+.menu > .two {
+    -o-transform:rotate(276deg);
+    -webkit-transform:rotate(276deg);
+    -moz-transform:rotate(276deg);
+    top:46px;
+    left:9%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;
+}
+
+
+.menu > .three {
+    -o-transform:rotate(263deg);
+    -webkit-transform:rotate(263deg);
+    -moz-transform:rotate(263deg);
+    top:57px;
+    left:16%;
+    font-size: 1.3vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;
+}
+
+.menu > .four {
+    -o-transform:rotate(272deg);
+    -webkit-transform:rotate(272deg);
+    -moz-transform:rotate(272deg);
+    top:34px;
+    left:22%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;
+}
+
+
+.menu > .five {
+    -o-transform:rotate(266deg);
+    -webkit-transform:rotate(266deg);
+    -moz-transform:rotate(266deg);
+    top:50px;
+    left:28%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;
+}
+
+.menu > .six {
+    -o-transform:rotate(273deg);
+    -webkit-transform:rotate(273deg);
+    -moz-transform:rotate(273deg);
+    top:35px;  
+    left:34.5%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;
+}
+
+.menu > .seven {
+    -o-transform:rotate(267deg);
+    -webkit-transform:rotate(267deg);
+    -moz-transform:rotate(267deg);
+    top:35px;  
+    right:34.5%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;}
+
+.menu > .eight {
+    -o-transform:rotate(274deg);
+    -webkit-transform:rotate(274deg);
+    -moz-transform:rotate(274deg);
+    top:50px;
+    right:28%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;}
+
+.menu > .nine {
+    -o-transform:rotate(268deg);
+    -webkit-transform:rotate(268deg);
+    -moz-transform:rotate(269deg);
+    top:34px;
+    right: 22%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;}
+
+
+.menu > .ten {
+    -o-transform:rotate(277deg);
+    -webkit-transform:rotate(277deg);
+    -moz-transform:rotate(277deg);
+    top:57px;
+    right: 16%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;}
+
+.menu > .eleven {
+    -o-transform:rotate(264deg);
+    -webkit-transform:rotate(264deg);
+    -moz-transform:rotate(264deg);
+    top:46px;
+    right: 9%;
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0);
+    z-index: 100001;
+    box-shadow: 0 0 0;}
+
+/*style of pages */
+
+.infobox {
+border: 5px solid red;
+border-radius: 20px;
+margin: 100px 10px 0;
+background-color: orange;
+}
+
+/*Polaroid*/
+figure{
+border: 10px solid #fff;
+margin: 0vw 0vw;
+border-bottom: 45px solid #fff;
+-webkit-box-shadow: 4px 4px 8px -4px #777;
+-moz-box-shadow: 3px 3px 3px #777;
+box-shadow: 3px 3px 3px #777;
+}
+
+/*Spuren*/
+#spuren{
+    background-image: url(../images/page5/spurenhuhn.png), url(../images/page5/spurenschaf.png), url(../images/page5/spurenschwein.png),url(../images/page5/spurenschaf.png);
+    background-repeat: no-repeat;
+    background-position: 37.5vw 3vw, 3vw 11vw, 31vw 28vw, 3vw 20vw;
+    background-size: 6vw, 4vw, 8vw, 4vw;
+}
+/*Farbverlauf*/
+
+.box:after {
+    position: absolute;
+    /*background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 22%, rgba(255,255,255,0.73) 23%, rgba(255,255,255,1) 91%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(22%,rgba(255,255,255,0.73)), color-stop(23%,rgba(255,255,255,0.73)), color-stop(91%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(233,232,227,0) 0%,rgba(233,232,227,0.73) 22%,rgba(233,232,227,0.73) 23%,rgba(233,232,227,1) 91%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.73) 22%,rgba(255,255,255,0.73) 23%,rgba(255,255,255,1) 91%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.73) 22%,rgba(255,255,255,0.73) 23%,rgba(255,255,255,1) 91%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.73) 22%,rgba(255,255,255,0.73) 23%,rgba(255,255,255,1) 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );*/
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    content: '';
+}
+
+::-webkit-scrollbar { width: 0 !important }
