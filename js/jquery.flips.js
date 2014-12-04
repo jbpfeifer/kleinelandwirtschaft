@@ -750,7 +750,7 @@
 			//Rezepte
             $.ajax({ 
                 type: 'GET', 
-                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaftrezepte.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs&limit=8', 
+                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaftrezepte.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs&limit=9', 
                 data: { get_param: 'value' }, 
                 dataType: 'jsonp',
                 success: function (data) { 
