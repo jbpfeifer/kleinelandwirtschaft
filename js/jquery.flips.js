@@ -114,8 +114,8 @@
 				else if( i < page ) {
 				
 					$page.css({
-						'-webkit-transform'	: 'rotateY( -181deg )', // todo: fix this (should be -180deg)
-						'-moz-transform'	: 'rotateY( -181deg )', // todo: fix this (should be -180deg)
+						'-webkit-transform'	: 'rotateY( -180deg )', // todo: fix this (should be -180deg)
+						'-moz-transform'	: 'rotateY( -180deg )', // todo: fix this (should be -180deg)
 						'z-index'			: _self.flipPagesCount - 1 + i
 					});
 				
