@@ -614,8 +614,16 @@ box-shadow: 3px 3px 3px #777;
     background-position: 37.5vw 3vw, 3vw 11vw, 31vw 28vw, 3vw 20vw;
     background-size: 6vw, 4vw, 8vw, 4vw;
 }
-/*Farbverlauf*/
 
+/*Cbox-Styling*/
+#cboxLoadedContent p{
+   font-size: 0.9vw; 
+
+}
+
+
+
+/*Farbverlauf*/
 .box:after {
     position: absolute;
     /*background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 22%, rgba(255,255,255,0.73) 23%, rgba(255,255,255,1) 91%);
