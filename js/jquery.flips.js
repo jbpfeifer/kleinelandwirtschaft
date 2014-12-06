@@ -734,7 +734,7 @@
 			
 			this.$flipPages.find( '#schaf' ).swipe({
                     tap:function(){
-                        $.colorbox({ajax:true, href:'html/schaf.html', title:'Schafe'});
+                        $.colorbox({ajax:true, href:'html/schaf.html', title:'Schweine'});
                     }
                 });
 
