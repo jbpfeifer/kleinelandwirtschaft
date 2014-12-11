@@ -757,20 +757,20 @@
                     for (i = 0; i <= 2; i++) {
                         $('#tumblr').append('<figure><div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div></figure><br/><br/>');
                         $('.tumblrelement').find('p:not(:first)').hide();
-                        $('.tumblrelement').find('p:first').css('top','7vw');
+                        $('.tumblrelement').find('p:first').css('top','6.5vw');
                         ajaxtumblr('<div id="tel' + i + '" class="tel" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[2].url + ')"></div><div id="tumblrtext"' + data.response.posts[i].caption + '</div>', i);
                     }
                     for (i = 3; i <= 5; i++) {
                         $('#tumblr2').append('<figure><div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div></figure><br/><br/>');
                         $('.tumblrelement').find('p:not(:first)').hide();
-                        $('.tumblrelement').find('p:first').css('top','7vw');
+                        $('.tumblrelement').find('p:first').css('top','6.5vw');
                         ajaxtumblr('<div id="tel' + i + '" class="tel" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[2].url + ')"></div><div id="tumblrtext"' + data.response.posts[i].caption + '</div>', i);
                         
                     }
                     for (i = 6; i <= 8; i++) {
                         $('#tumblr3').append('<figure><div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div></figure><br/><br/>');
                         $('.tumblrelement').find('p:not(:first)').hide();
-                        $('.tumblrelement').find('p:first').css('top','7vw');
+                        $('.tumblrelement').find('p:first').css('top','6.5vw');
                         ajaxtumblr('<div id="tel' + i + '" class="tel" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[2].url + ')"></div><div id="tumblrtext"' + data.response.posts[i].caption + '</div>', i);
                         
                     }
