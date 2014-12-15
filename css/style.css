@@ -423,7 +423,7 @@ a.f-ref{
 	text-align: center;
 	line-height: 30px;
 }
-@media screen and (max-width: 760px){
+/*@media screen and (max-width: 760px){
 	.f-title a {
 		height: 30px;
 		line-height: 14px;
@@ -481,4 +481,4 @@ a.f-ref{
 		display: none;
 	}
 	
-}
+}*/

@@ -378,10 +378,10 @@ background: rgba(255, 255, 255, 0);
 
 /* -------------Screen Size-------------*/
 
-/*1200px*/
+/*1200px
 @media screen and (max-width : 1200px)  {}
 
-/* 979px */
+ 979px 
 @media screen and (max-width : 979px)  {
   .f-title a:nth-child(5n) {
     display:none;}
@@ -389,8 +389,8 @@ background: rgba(255, 255, 255, 0);
     display:none;}
  }
 
-/*767px*/
-/* portrait and landscape */
+767px
+/* portrait and landscape 
 @media screen and (max-width : 767px)  {
   .f-title a:nth-child(4n) {
     display:none;}
@@ -400,18 +400,18 @@ background: rgba(255, 255, 255, 0);
     display:none;}
  }
 
-/*Phone*/
-/* portrait and landscape */
+/*Phone
+/* portrait and landscape 
 @media screen and (min-device-width : 320px) 
 and (max-device-width : 480px)  {}
 
-/*  landscape  */
+/*  landscape /
 @media screen and (min-width : 321px)  {}
 
-/*  portrait */
+/*  portrait 
 @media screen and (max-width : 320px)  {}
 
-/* iPhone 4 and high pixel devices  */
+/* iPhone 4 and high pixel devices 
 @media screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5)  {}
 
