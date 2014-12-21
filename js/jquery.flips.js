@@ -797,7 +797,7 @@
                 data: { get_param: 'value' }, 
                 dataType: 'jsonp',
                 success: function (data) { 
-                        $('.blog').css("background-image", "url(" + data.response.posts[0].photos[0].alt_sizes[2].url + ")");
+                        $('.blog').css("background-image", "url(" + data.response.posts[0].photos[0].alt_sizes[0].url + ")");
                         $('.blogtext').html(data.response.posts[0].caption);
                 }
                 
