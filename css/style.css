@@ -197,8 +197,8 @@ a.f-ref{
 	content: '';
 	top: 0px;
 	left: 0px;
-	background: rgba(255,255,255,0.4);
-	box-shadow: 0 95px 0px rgba(255,255,255,0.6);
+	/*background: rgba(255,255,255,0.4);
+	box-shadow: 0 95px 0px rgba(255,255,255,0.6);*/
 }
 .logo:after{
 	position: absolute;
@@ -207,8 +207,8 @@ a.f-ref{
 	content: '';
 	top: 0px;
 	right: 0px;
-	background: rgba(255,255,255,0.6);
-	box-shadow: 0 95px 0px rgba(255,255,255,0.4);
+	/*background: rgba(255,255,255,0.6);
+	box-shadow: 0 95px 0px rgba(255,255,255,0.4);*/
 }
 .f-title{
 	position: absolute;
