@@ -790,14 +790,14 @@
                 
             });
             
-            //Blog
-            $.ajax({ 
+      //Blog
+      $.ajax({ 
                 type: 'GET', 
                 url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaft.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs&limit=1', 
                 data: { get_param: 'value' }, 
                 dataType: 'jsonp',
                 success: function (data) { 
-                        $('.blog').css("background-image", "url(" + data.response.posts[0].photos[0].alt_sizes[0].url + ")");
+                        $('.blog').css("background-image", "url(" + data.response.posts[0].photos[0].alt_sizes[2].url + ")");
                         $('.blogtext').html(data.response.posts[0].caption);
                 }
                 

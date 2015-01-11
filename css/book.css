@@ -78,10 +78,10 @@ padding-bottom: 0.8vw;
 
 .blog {
     text-align: center; 
-    height: 30vw; 
+    height: 10vw; 
     max-width: 100%; 
     background-size: contain; 
-    background-position: 50% 0vw; 
+    background-position: 50% 1vw; 
     background-repeat: no-repeat;
     margin-bottom: 1vw;
 }
