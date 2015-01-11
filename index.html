@@ -369,7 +369,7 @@
 	Modernizr.load({
 		test: Modernizr.csstransforms3d && Modernizr.csstransitions,
 		yep : ['js/jquery.tmpl.min.js','js/jquery.history.js','js/core.string.js','js/jquery.touchSwipe.min.js','js/jquery.flips.js'],
-		nope: 'css/fallback.css',
+		nope: ['js/jquery.tmpl.min.js','js/jquery.colorbox-min.js','css/fallback.css'],
 		callback : function( url, result, key ) {
 			
 			if( url === 'css/fallback.css' ) {
