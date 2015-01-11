@@ -247,6 +247,7 @@ background: rgba(255, 255, 255, 0);
 
 .f-title > .one {
   -o-transform:rotate(272deg);
+  -ms-transform:rotate(272deg);
   -webkit-transform:rotate(272deg);
   -moz-transform:rotate(272deg);
   background: #ffc;
@@ -259,6 +260,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .two {
     -o-transform:rotate(276deg);
     -webkit-transform:rotate(276deg);
+    -ms-transform:rotate(276deg);
     -moz-transform:rotate(276deg);
     top:2.4vw;
     left:9%;
@@ -270,6 +272,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .three {
     -o-transform:rotate(263deg);
     -webkit-transform:rotate(263deg);
+    -ms-transform:rotate(263deg);
     -moz-transform:rotate(263deg);
     top:2.9vw;
     left:16%;
@@ -280,6 +283,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .four {
     -o-transform:rotate(272deg);
     -webkit-transform:rotate(272deg);
+    -ms-transform:rotate(272deg);
     -moz-transform:rotate(272deg);
     top:2vw;
     left:22%;
@@ -289,6 +293,7 @@ background: rgba(255, 255, 255, 0);
 
 .f-title > .five {
     -o-transform:rotate(266deg);
+    -ms-transform:rotate(266deg);
     -webkit-transform:rotate(266deg);
     -moz-transform:rotate(266deg);
     top:2.7vw;
@@ -300,6 +305,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .six {
     -o-transform:rotate(273deg);
     -webkit-transform:rotate(273deg);
+    -ms-transform:rotate(273deg);
     -moz-transform:rotate(273deg);
     top:2vw;  
     left:34.5%;
