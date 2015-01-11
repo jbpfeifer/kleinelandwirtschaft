@@ -381,9 +381,9 @@
 		}
     });
 
-    if ( $.browser.msie ) {
-        $.colorbox({width: "100%", height: "100%", href:"../alternate_site/alternate_entry.html"});
-     }
+   if(navigator.userAgent.match(/Trident.*rv:11\./)) {
+     $.colorbox({width: "100%", height: "100%", href:"../alternate_site/alternate_entry.html"});
+   }
 </script>
 <script type="text/javascript" src="js/tumblrintegration.js"></script>
 </html>
