@@ -369,17 +369,14 @@
 	Modernizr.load({
 		test: Modernizr.csstransforms3d && Modernizr.csstransitions,
 		yep : ['js/jquery.tmpl.min.js','js/jquery.history.js','js/core.string.js','js/jquery.touchSwipe.min.js','js/jquery.flips.js'],
-		nope: function(){
-      alert('Argh');
-    }
+		nope: 'css/fallback.css',
 		callback : function( url, result, key ) {
 			
-			//if( url === 'css/fallback.css' ) {
+			if( url === 'css/fallback.css' ) {
       //$pages.show();
-       // alert('Argh');
-			//}
-      //	else 
-    if( url === 'js/jquery.flips.js' ) {
+      alert('Argh');
+			}
+			else if( url === 'js/jquery.flips.js' ) {
 				$container.flips();
 			}
 		}
