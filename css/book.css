@@ -78,10 +78,10 @@ padding-bottom: 0.8vw;
 
 .blog {
     text-align: center; 
-    height: 30vw; 
+    height: 10vw; 
     max-width: 100%; 
     background-size: contain; 
-    background-position: 50% 0vw; 
+    background-position: 50% 1vw; 
     background-repeat: no-repeat;
     margin-bottom: 1vw;
 }
@@ -216,7 +216,6 @@ background: rgba(255, 255, 255, 0);
   height: 8vw;
   text-align: center;
   width: 100%;
-  overflow: hidden;
   background-color: transparent;
 }
 
@@ -232,6 +231,7 @@ background: rgba(255, 255, 255, 0);
   font-size:1.5vw;
   line-height: 6vw;
   position: absolute;
+  -ms-transform:rotate(270deg);
   -o-transform:rotate(270deg);
   -webkit-transform:rotate(270deg);
   -moz-transform:rotate(270deg);
@@ -246,6 +246,7 @@ background: rgba(255, 255, 255, 0);
 
 .f-title > .one {
   -o-transform:rotate(272deg);
+  -ms-transform:rotate(272deg);
   -webkit-transform:rotate(272deg);
   -moz-transform:rotate(272deg);
   background: #ffc;
@@ -258,6 +259,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .two {
     -o-transform:rotate(276deg);
     -webkit-transform:rotate(276deg);
+    -ms-transform:rotate(276deg);
     -moz-transform:rotate(276deg);
     top:2.4vw;
     left:9%;
@@ -269,6 +271,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .three {
     -o-transform:rotate(263deg);
     -webkit-transform:rotate(263deg);
+    -ms-transform:rotate(263deg);
     -moz-transform:rotate(263deg);
     top:2.9vw;
     left:16%;
@@ -279,6 +282,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .four {
     -o-transform:rotate(272deg);
     -webkit-transform:rotate(272deg);
+    -ms-transform:rotate(272deg);
     -moz-transform:rotate(272deg);
     top:2vw;
     left:22%;
@@ -288,6 +292,7 @@ background: rgba(255, 255, 255, 0);
 
 .f-title > .five {
     -o-transform:rotate(266deg);
+    -ms-transform:rotate(266deg);
     -webkit-transform:rotate(266deg);
     -moz-transform:rotate(266deg);
     top:2.7vw;
@@ -299,6 +304,7 @@ background: rgba(255, 255, 255, 0);
 .f-title > .six {
     -o-transform:rotate(273deg);
     -webkit-transform:rotate(273deg);
+    -ms-transform:rotate(273deg);
     -moz-transform:rotate(273deg);
     top:2vw;  
     left:34.5%;

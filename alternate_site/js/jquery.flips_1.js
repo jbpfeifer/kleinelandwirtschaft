@@ -50,7 +50,7 @@
 			this._initTouchSwipe();
 			this._loadEvents();
 			this._goto();
-
+			
 		},
 		_validateOpts		: function() {
 			
@@ -114,8 +114,8 @@
 				else if( i < page ) {
 				
 					$page.css({
-						'-webkit-transform'	: 'rotateY( -180deg )', // todo: fix this (should be -180deg)
-						'-moz-transform'	: 'rotateY( -180deg )', // todo: fix this (should be -180deg)
+						'-webkit-transform'	: 'rotateY( -181deg )', // todo: fix this (should be -180deg)
+						'-moz-transform'	: 'rotateY( -181deg )', // todo: fix this (should be -180deg)
 						'z-index'			: _self.flipPagesCount - 1 + i
 					});
 				
@@ -683,6 +683,7 @@
 		_loadEvents			: function() {
 			
 			var _self = this;
+
 			$( window ).on( 'resize.flips', function( event ) {
 			
 				_self._getWinSize();
@@ -720,25 +721,28 @@
 			} );
 			
 			//make the pictures clickable for colopbox;
-            this.$flipPages.find( '#hahn' ).swipe({
+			this.$flipPages.find( '#hahn' ).swipe({
                 tap:function(){
                     $.colorbox({ajax:true, href:'html/huehner.html', title:'Hühner'});
                 }
             });
 			
 			this.$flipPages.find( '#schwein' ).swipe({
-                    tap:function(){
-                        $.colorbox({ajax:true, href:'html/schwein.html', title:'Schweine'});
-                    }
-                });
+                tap:function(){
+                    $.colorbox({ajax:true, href:'html/schwein.html', title:'Schweine'});
+                }
+            });
 			
 			this.$flipPages.find( '#schaf' ).swipe({
-                    tap:function(){
-                        $.colorbox({ajax:true, href:'html/schaf.html', title:'Schweine'});
-                    }
-                });
-
+                tap:function(){
+                    $.colorbox({ajax:true, href:'html/schaf.html', title:'Schweine'});
+                }
+            });
+			
 			//functions for the tumblr intergration
+            function displayFirst(){
+                $(this).find('p:not(:first)').hide()
+            }
             
             function ajaxtumblr(adress, j){
                 $( '#tel' + j ).swipe({
@@ -750,27 +754,18 @@
 			//Rezepte
             $.ajax({ 
                 type: 'GET', 
-                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaftrezepte.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs&limit=9', 
+                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaftrezepte.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs', 
                 data: { get_param: 'value' }, 
                 dataType: 'jsonp',
                 success: function (data) { 
-                    for (i = 0; i <= 2; i++) {
-                        $('#tumblr').append('<figure><div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div></figure><br/><br/>');
-                        $('.tumblrelement').find('p:not(:first)').hide();
-                        $('.tumblrelement').find('p:first').css('top','6.5vw');
+                    for (i = 0; i <= 3; i++) {
+                        $('#tumblr').append('<div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div><br/><br/>');
+                        $('.tumblrelement').each(displayFirst);
                         ajaxtumblr('<div id="tel' + i + '" class="tel" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[2].url + ')"></div><div id="tumblrtext"' + data.response.posts[i].caption + '</div>', i);
                     }
-                    for (i = 3; i <= 5; i++) {
-                        $('#tumblr2').append('<figure><div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div></figure><br/><br/>');
-                        $('.tumblrelement').find('p:not(:first)').hide();
-                        $('.tumblrelement').find('p:first').css('top','6.5vw');
-                        ajaxtumblr('<div id="tel' + i + '" class="tel" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[2].url + ')"></div><div id="tumblrtext"' + data.response.posts[i].caption + '</div>', i);
-                        
-                    }
-                    for (i = 6; i <= 8; i++) {
-                        $('#tumblr3').append('<figure><div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div></figure><br/><br/>');
-                        $('.tumblrelement').find('p:not(:first)').hide();
-                        $('.tumblrelement').find('p:first').css('top','6.5vw');
+                    for (i = 4; i <= 7; i++) {
+                        $('#tumblr2').append('<div id="tel' + i + '" class="tumblrelement" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[3].url + ')">' + data.response.posts[i].caption + '</div><br/><br/>');
+                        $('.tumblrelement').each(displayFirst);
                         ajaxtumblr('<div id="tel' + i + '" class="tel" style="background-image:url(' + data.response.posts[i].photos[0].alt_sizes[2].url + ')"></div><div id="tumblrtext"' + data.response.posts[i].caption + '</div>', i);
                         
                     }
@@ -780,29 +775,15 @@
 			//Grünzeug
 			$.ajax({ 
                 type: 'GET', 
-                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaftgruenzeug.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs&limit=1', 
+                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaftgruenzeug.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs', 
                 data: { get_param: 'value' }, 
                 dataType: 'jsonp',
                 success: function (data) { 
                         $('.grunzeug').css("background-image", "url(" + data.response.posts[0].photos[0].alt_sizes[2].url + ")");
-                        $('.grunzeugtext').html(data.response.posts[0].caption);
+                        $('.grunzeug').html(data.response.posts[0].caption);
                 }
                 
             });
-            
-      //Blog
-      $.ajax({ 
-                type: 'GET', 
-                url: 'http://api.tumblr.com/v2/blog/kleinelandwirtschaft.tumblr.com/posts?api_key=d6TTmPxwLvGW4OPsdNAETdHtvDooKJoO20CIoyahBzqfy6qhCs&limit=1', 
-                data: { get_param: 'value' }, 
-                dataType: 'jsonp',
-                success: function (data) { 
-                        $('.blog').css("background-image", "url(" + data.response.posts[0].photos[0].alt_sizes[2].url + ")");
-                        $('.blogtext').html(data.response.posts[0].caption);
-                }
-                
-            });
-            
 			//make the menu flipable - this is made for every entry
 			$('.one').on( 'click touch', function( event ) {
                 History.pushState( null, null, '?page=1');
@@ -947,9 +928,9 @@
                 $(".nine").css( "visibility","visible");
                 $(".ten").css( "visibility","visible");
                 $(".eleven").css( "visibility","visible");
-            });
-            
-            $('.six, .seven').on( 'click touch', function( event ) {
+			} );
+			
+			$('.six, .seven').on( 'click touch', function( event ) {
                 History.pushState( null, null, '?page=6');
                 $(".container .page:nth-of-type(1)").css({
                         "-webkit-transform":"rotatey(-180deg)"
@@ -987,9 +968,7 @@
                 $(".nine").css( "visibility","visible");
                 $(".ten").css( "visibility","visible");
                 $(".eleven").css( "visibility","visible");
-            });
-            
-
+			} );
 			
 		},
 		_onEndFlip			: function( $page ) {
@@ -1242,7 +1221,6 @@
 			}
 				
 		}
-		
 	};
 	
 	var logError        = function( message ) {
