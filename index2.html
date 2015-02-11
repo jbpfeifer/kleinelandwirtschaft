@@ -57,8 +57,7 @@
     <div id="flip" class="container">
 		<div class="f-page f-cover">
 			<div class="cover-elements"></div>
-      <div class="einladung" style="position:absolute; top:80%; font-size: 1.5vw; text-align: center; margin: 0 6vw;">Infoabend am <strong>19.02.2015</strong>, um <strong>18:30</strong> im <strong>Gasthaus Leiner</strong> (Unter-Henndorf 69, 8380 Jennersdorf)</div>
-      <div class="f-cover-flip">Zum Umblättern <br>swipen</div>
+			<div class="f-cover-flip">Zum Umblättern <br>swipen</div>
 		</div> 
 	    <div class="f-page">
             <div class="f-title">
@@ -374,8 +373,7 @@
 		callback : function( url, result, key ) {
 			
 			if( url === 'css/fallback.css' ) {
-			alert("Test");	
-      // "$pages.show();"
+				$pages.show();
 			}
 			else if( url === 'js/jquery.flips.js' ) {
 				$container.flips();
@@ -384,7 +382,6 @@
 	});
 </script>
 <script type="text/javascript" src="js/tumblrintegration.js"></script>
-<script type="text/javascript">
-  
+
     
 </html>
